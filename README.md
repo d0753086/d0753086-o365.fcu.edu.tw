@@ -1,0 +1,1 @@
+<br>"stylelint": "stylelint ./src/web/css/**/*.css",

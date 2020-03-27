@@ -1,0 +1,10 @@
+{
+    "eslint.options": {
+        "plugins":["html"]
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html"
+    ]
+}

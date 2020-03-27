@@ -1,0 +1,30 @@
+{
+  "name": "node_sample",
+  "version": "1.0.0",
+  "description": "sample",
+  "main": "index.js",
+  "scripts": {
+  "test": "node_modules/.bin/mocha ./src/test/*.js --timeout 100000",
+  "htmlhint": "htmlhint ./src/web/",
+  "eslint": "eslint --ext .html,.js ./src/web/**/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-html": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*",
+    "htmlhint": "*",
+    "npm": "*",
+    "selenium-webdriver": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "stylelint": "*",
+    "stylelint-config-standard": "*"
+  },
+  "devDependencies": {}
+}

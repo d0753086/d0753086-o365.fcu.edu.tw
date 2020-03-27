@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+header {
+  background-image: url("../img/bg.jpg");
+  width: auto;
+  height: 160px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+
+aside {
+  float: left;
+  width: 180px;
+  background: rgb(241, 174, 143);
+  height: auto;
+  text-align: center;
+}
+
+body {
+  background-size: cover;
+  height: 500px;
+}
+
+footer {
+  clear: both;
+  background-color: #df181b;
+  height: 100px;
+}
+
+a {
+  color: brown;
+}
+
+h5 {
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+h1 {
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+h2 {
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+h3 {
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+p {
+  font-family: "Microsoft JhengHei", sans-serif;
+  font-size: "5";
+}
+
+#map {
+  margin: 5%;
+  height: 300px;
+  width: 500px;
+}
+
+.container-fluid {
+  text-align: center;
+}
+</style>
+<title>賽德克清流</title>
+<script>
+    function initMap() {
+    var Renai = {lat: 24.021655, lng: 121.125105};
+     var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 11,
+        center: Renai
+        });
+        var marker = new google.maps.Marker({
+        position: Renai,
+        map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJGwb_EyPHmUtTbNhCNsNCjgJye1EJRvM&callback=initMap">
+    </script>
+</head>
+<body>
+    <!--以下的Boostrap切割概念皆是先row在決定col，在一個網頁裡先決定你要的區塊在哪，設一個container，
+      然後再設置一個div，class命名為row，此時你已經在這個container裡擁有了一個橫的row，在這個<div cl
+      ass="row">裡，你可以切割他們的col(欄數，直的)數 語法為col-x(x為12等分中你要佔幾分)，或者是你也
+      可以不打x只打col，這樣每一個row就會先檢查所有有打x的col，先用12扣掉x，剩下的在平均分配給col，以
+      此類推所有的區塊都可以用這樣子的方式來切割並做對齊動作
+	
+	想要水平或者是垂直對齊需要確定你想對齊的東西外面有個row，若沒有就要自己設，然後對row去做下面的語法，可以參考幻燈片對齊的程式碼
+	
+	靠左對齊 justify-content-start
+	置中對齊 justify-content-center
+	靠右對齊 justify-content-end
+	等距對齊 justify-content-around
+	平均對齊 justify-content-between
+	
+	靠上對齊 align-items-start
+	置中對齊 align-items-center
+	靠下對齊 align-items-end-->
+	<header class="container">
+    <a href="../html/main.html" class="row">
+      <img src="../img/Logo.jpg" style="width: 330px; height: 160px;">
+     </a>
+	</header>
+
+	<article class="container">
+    <div class="row">
+      <aside class="col-2">
+        <div class="row">
+            <h5 class="col"><br>
+              <a href="../html/introduction.html" style="text-decoration: none;">部落介紹</a>
+            </h5><br>
+        </div>
+        <div class="row">    
+            <h5 class="col"><br>
+              <a href="../html/solicitude.html" style="text-decoration: none;">關懷專區</a>
+            </h5><br>
+        </div>   
+        <div class="row">   
+            <h5 class="col"><br>
+              <a href="../html/share.html" style="text-decoration: none;">旅遊分享討論</a>
+            </h5><br>
+        </div>
+        <div class="row">     
+            <h5 class="col"><br>
+              <a href="../html/feedback.html" style="text-decoration: none;">回饋專區</a>
+            </h5><br>
+        </div>
+        <div class="row">
+            <h5 class="col"><br>
+              <a href="../html/link.html" style="text-decoration: none;">相關連結</a>
+            </h5><br>
+        </div>
+      </aside>
+      <div class="col-10" style="background-image: url(../img/backgroundonthefloor.jpeg)">
+        <h2><br>&nbsp;&nbsp;&nbsp;&nbsp;部落簡介</h2><br>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;事件前霧社是總督府理番政策的重點地區，儘管如此還是出現了大規模的反抗。因此總督府修正了臺灣原住民的種族歧視政策，並且加速皇民化教育，對原住民思想改造。並將原住民強制遷移到平地定居，
+          由狩獵改為農耕生活。巴蘭社群（巴蘭、塔卡南、卡茲庫雖然因為在事件中保持中立並救助日人而未遭受處罰，但在1939年時，仍因日本人興建萬大水庫而遷移到北港溪中游台地，取名為中原社。 
+          霧社事件後，台灣總督強迫剩下的賽德克族德克達雅群離開霧社週邊的祖居地，搬遷至川中地區。日本人引誘與馬赫坡社有嫌隙的部落對其騷擾，於是乎道澤社等部落對收容在羅多夫收容所的遺族進犯，
+          是為「第二次霧社事件」。第二次霧社事件後抗日六社遺族僅剩298名。1931年5月6日，日本官方強制六社全部遷移到北港溪流域與眉原溪交會處之川中島，以集中監視，並將六社合成一社改名為「川中島社」
+          不得回原籍，從此霧社地區賽德克族永離祖居。從高山遷至低原區，六社遺族多水土不服，許多人染痢疾、瘧疾而死，亦有因憂恨而自殺身亡者；潛回原居地者4人，3人處死，1人年幼飭回。之後，
+          日方舉行「歸順典禮」，帶走23名遺族壯丁，此23人皆被刑求而死於獄中。約在同時，巴蘭社群也被以類似手法捕殺了16名曾參加起義的男子。 最後六社遺族僅剩老弱婦孺200多名（約霧社事件前五分之一），
+          原抗日六社居住地的霧社地區，日方則無條件撥給於一、二次霧社事件中協助日方的「味方蕃」（今賽德克族道澤/都達群），居住至今。台灣光復後，在台灣省議會的協助下，殘餘的賽德克人才得以安居。
+         接著改善部落附近的道路，讓賽德克人可以平安回家。 幾次的天災重創了清流部落。如九二一大地震、納莉颱風、賀伯颱風和象神颱風、龍王颱風等災害屢屢重創清流部落。等到龍王颱風過後，
+          散落在台灣各地的賽德克族人紛紛返鄉，讓清流部落再次「重生」。(引文出處:維基百科)
+        </p><br>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;南投縣仁愛鄉位置(點擊google圖示可連結到google map)</h2>
+        <p style="color: #df181b;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;從國姓鄉的台21線省道轉往惠蓀林場的「投80線」鄉道約1.8公里，可以看到路邊「清流部落」石碑標誌就立在投80線、北港溪旁，進入清流部落牌樓、跨越會清流橋下的北港溪，就可以進入清流部落清風路。</p>
+        <section></section>
+        <div class="row">
+          <div id="map" class="align-items-center"></div><br>
+        </div>
+      </div>  
+    </div>
+    <footer class="row">
+      部落介紹
+    </footer>
+        
+	</article>
+    
+
+   
+</body>
+</html>

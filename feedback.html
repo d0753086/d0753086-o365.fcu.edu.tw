@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+header {
+  background-image: url("../img/bg.jpg");
+  width: auto;
+  height: 160px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+
+aside {
+  float: left;
+  width: 180px;
+  background: rgb(241, 174, 143);
+  height: auto;
+  text-align: center;
+}
+
+body {
+  background-size: cover;
+  height: 500px;
+}
+
+footer {
+  clear: both;
+  background-color: #df181b;
+  height: 100px;
+}
+
+a {
+  color: brown;
+}
+
+h5 {
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+h2 {
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+h1 {
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+h3 {
+  font-family: "Microsoft JhengHei", sans-serif;
+  color: sienna;
+}
+
+h4 {
+  font-family: "Microsoft JhengHei", sans-serif;
+  color: sienna;
+}
+
+.container-fluid {
+  text-align: center;
+}
+
+.card {
+  margin: 5%;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+</style>
+<title>賽德克清流</title>
+</head>
+<body>
+    <!--以下的Boostrap切割概念皆是先row在決定col，在一個網頁裡先決定你要的區塊在哪，設一個container，然後再設置一個div，
+      class命名為row，此時你已經在這個container裡擁有了一個橫的row，在這個<div class="row">裡，你可以切割他們的col(欄數
+        ，直的)數 語法為col-x(x為12等分中你要佔幾分)，或者是你也可以不打x只打col，這樣每一個row就會先檢查所有有打x的col，
+        先用12扣掉x，剩下的在平均分配給col，以此類推所有的區塊都可以用這樣子的方式來切割並做對齊動作
+	
+	想要水平或者是垂直對齊需要確定你想對齊的東西外面有個row，若沒有就要自己設，然後對row去做下面的語法，可以參考幻燈片對齊的程式碼
+	
+	靠左對齊 justify-content-start
+	置中對齊 justify-content-center
+	靠右對齊 justify-content-end
+	等距對齊 justify-content-around
+	平均對齊 justify-content-between
+	
+	靠上對齊 align-items-start
+	置中對齊 align-items-center
+	靠下對齊 align-items-end-->
+	<header class="container">
+		<a href="../html/main.html" class="row">
+      <img src="../img/Logo.jpg" style="width: 330px; height: 160px;">
+     </a>
+  </header>
+  <article class="container">
+    <div class="row">
+      <aside class="col-2">
+      
+        <div class="row">
+          <h5 class="col"><br>
+            <a href="../html/introduction.html" style="text-decoration: none;">部落介紹</a>
+          </h5>
+        </div>  
+        <div class="row">
+          <h5 class="col"><br>
+            <a href="../html/solicitude.html" style="text-decoration: none;">關懷專區</a>
+          </h5>
+        </div>
+        <div class="row">
+          <h5 class="col"><br>
+            <a href="../html/share.html" style="text-decoration: none;">旅遊分享討論</a>
+          </h5>
+        </div>
+        <div class="row">
+          <h5 class="col"><br>
+            <a href="../html/feedback.html" style="text-decoration: none;">回饋專區</a>
+          </h5>
+        </div> 
+        <div class="row">
+          <h5 class="col"><br>
+            <a href="../html/link.html" style="text-decoration: none;">相關連結</a>
+          </h5>
+        </div> 
+     </aside>
+       
+     <div class="col-10" style="background-image: url(../img/backgroundonthefloor.jpeg)">
+      <br>
+      <br>
+      <div class="row">
+        <h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;感謝您瀏覽我們的網頁，對於我們的網站若您有任何意見，歡迎來信聯絡我們或是填寫我們的滿意度調查表</h3>
+      </div>
+      
+      <div class="row">
+          <p style="margin-left: 40px;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLAJJTYIKz3sIOmH6VB-hyqGhxMPjPK0xv6wsBnfPnzPmhhQ/viewform?embedded=true" width="auto" height="500" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe></p>
+      </div>
+
+     <div class="row">
+      <div class="col-sm-5">
+        <h2 style="font-style: oblique; color: coral" class="col-12">&nbsp;&nbsp;&nbsp;聯絡我們</h2><br>
+        <p class="col-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail:d0753086@o365.fcu.edu.tw <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:d0753086@o365.fcu.edu.tw">寄信給我</a> </p><br>
+       
+        <p class="col-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Line ID:joelin0112</p><br>
+        <p class="col-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook:</p><br>
+        <p class="col-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手機:0983xxxxxx</p><br>
+      </div>
+
+      <div class="col justify-content-start">
+          <img class="card" src="../img/feedback.jpg" style="width: 369px; height: 210px">
+      </div>
+    </div>
+    
+
+    </div>
+   </div>
+   
+   <footer class="row justify-content-end">
+    <p>圖片版權皆為本網站所有</p>
+   </footer>
+		
+    
+	</article>
+
+</body>
+</html>
